@@ -1,4 +1,4 @@
-package domain;
+package orderApp.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,24 +13,13 @@ import java.util.Date;
         private Long id;
         private String name;
         private String email;
-        private String roomtype;
-        private Number head;
+        private String roomType;
+        private int head;
         private String supply;
-        private Date startdate;
-        private Date leavedate;
+        private Date startDate;
+        private Date leaveDate;
 
         public OrderData() {
-        }
-
-        public OrderData(String name, Long id, String email, String roomtype, Number head, String supply, Date startdate, Date leavedate) {
-            this.name = name;
-            this.id = id;
-            this.email = email;
-            this.roomtype = roomtype;
-            this.head = head;
-            this.supply = supply;
-            this.startdate = startdate;
-            this.leavedate =leavedate;
         }
 
         public Long getId() {
@@ -57,19 +46,19 @@ import java.util.Date;
             this.email = email;
         }
 
-        public String getRoomtype() {
-            return roomtype;
+        public String getRoomType() {
+            return roomType;
         }
 
-        public void setRoomtype(String roomtype) {
-            this.roomtype = roomtype;
+        public void setRoomType(String roomtype) {
+            this.roomType = roomtype;
         }
 
-        public Number getHead() {
+        public int getHead() {
             return head;
         }
 
-        public void setHead(Number head) {
+        public void setHead(int head) {
             this.head = head;
         }
 
@@ -81,19 +70,19 @@ import java.util.Date;
             this.supply = supply;
         }
 
-        public Date getStartdate() {
-            return startdate;
+        public Date getStartDate() {
+            return startDate;
         }
 
-        public void setStartdate(Date startdate) {
-            this.startdate = startdate;
+        public void setStartDate(Date startdate) {
+            this.startDate = startdate;
         }
 
-        public Date getLeavedate() {
-            return leavedate;
+        public Date getLeaveDate() {
+            return leaveDate;
         }
 
-        public void setLeavedate(Date leavedate) {
-            this.leavedate = leavedate;
+        public void setLeaveDate(Date leavedate) {
+            this.leaveDate = leavedate;
         }
     }

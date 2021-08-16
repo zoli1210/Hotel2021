@@ -1,6 +1,6 @@
-package repository;
+package orderApp.repository;
 
-import domain.OrderData;
+import orderApp.domain.OrderData;
 import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
